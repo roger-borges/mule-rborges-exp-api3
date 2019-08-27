@@ -1,0 +1,23 @@
+{
+  "secureProperties": ["cps.keyId,cps.clientId","cps.clientSecret","my.client_secret","mule.key",
+                       "anypoint.platform.client_secret","mule_cps_keystore_password",
+                       "mule_cps_key_password","mule_cps_keystore_filename","mule_cps_keystore_client_secret"],
+  "redeploymentEnabled": true,
+  "name": "rborges-exp-api3",
+  "minMuleVersion": "4.1.1",
+  "requiredProduct": "MULE_EE",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {
+      "exportedResources": [
+        "httplistener.jks",
+        "common.properties",
+        "cps-boot.properties"
+      ]
+    }
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
+}
